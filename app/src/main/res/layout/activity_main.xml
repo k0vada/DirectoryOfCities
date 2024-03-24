@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <Button
+        android:id="@+id/buttonChooseCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Выбрать город"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:clickable="true"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonChooseCity"
+        >
+
+        <TextView
+            android:id="@+id/textCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Город:"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textFedOkr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Федеральный округ:"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Регион:"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Почтовый индекс:"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Часовой пояс:"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textPopul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Население:"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Дата основания:"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonShowOnMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Показать на карте"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        android:clickable="true"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
